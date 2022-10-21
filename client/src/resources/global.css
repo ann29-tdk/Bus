@@ -1,0 +1,136 @@
+.h-screen {
+    height: 100vh;
+}
+
+.w-400 {
+    width: 400px;
+}
+
+/* inputs */
+input,
+select {
+    height: 40px;
+    border: 2px solid gray;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.ant-form-item {
+    margin: 0 !important;
+}
+
+
+/* card */
+.card {
+    border: 2px solid gray;
+    box-shadow: 0 0 1px rgb(189, 189, 189);
+    border-radius: 0 !important;
+}
+
+/* Text sizes */
+.text-2xl {
+    font-size: 30px !important;
+}
+
+.text-xl {
+    font-size: 25px !important;
+}
+
+.text-lg {
+    font-size: 20px !important;
+}
+
+.text-md {
+    font-size: 18px !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+.underline {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Buttons */
+button {
+    border-radius: 0 !important;
+}
+
+.primary-btn {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    background-color: var(--secondary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.outlined {
+    border: 2px solid var(--secondary) !important;
+    color: var(--secondary) !important;
+    background-color: white !important;
+}
+
+.disabled-btn {
+    background-color: #CFD2CF !important;
+    color: #000;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 10px 20px;
+    cursor: not-allowed;
+}
+
+/* ANCHOR TAG */
+
+a {
+    text-decoration: none !important;
+    color: var(--primary) !important;
+}
+
+i {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+h1,
+p {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* loader */
+.spinner-parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.57);
+    z-index: 1000;
+}
+
+.spinner-border {
+    color: #fff !important;
+    height: 80px !important;
+    width: 80px !important;
+}
+
+table {
+    border: 1px solid rgb(193, 187, 187) !important;
+}

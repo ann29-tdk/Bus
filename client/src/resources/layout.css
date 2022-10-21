@@ -1,0 +1,74 @@
+.Layout-parent {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    height: 100vh;
+    gap: 20px;
+}
+
+.body {
+    width: 100%;
+}
+
+.header {
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.479);
+    width: 100%;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: var(--secondary);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px;
+    flex-direction: column;
+}
+
+.logo {
+    color: #fff;
+}
+
+.role {
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu {
+    margin-top: 150px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2;
+    gap: 15px;
+}
+
+.active-menu-item {
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.menu-item i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.menu-item span {
+    font-size: 18px;
+    color: #fff;
+}
+
+.content {
+    padding: 10px 0;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    height: 85vh;
+}
