@@ -15,12 +15,19 @@ app.use('/api/bookings', bookingsRoute);
 
 const path = require("path");
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static("client/build"));
+//Serving the frontend
 
-    app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-    });
-}
+app.use(express.static(path.join(__dirname, './client/build')));
+
+app.get("*", function(_, res){
+    res.sendFile(
+        path.join(__dirname, './client/build/index.html'),
+        function(err){
+            res.status(500).send(err);
+        }
+    );
+});
+
+
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
